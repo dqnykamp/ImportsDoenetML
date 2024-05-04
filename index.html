@@ -5,12 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-    <script onload="loadDoenetML()" type="module" src="/src/main-load-with-function.jsx"></script>
   </head>
   <body>
-    <div id="activity1"></div>
-
-    <script>function loadDoenetML() { console.log('start'); window.setDoenetML("activity1", 2, `<selectFromSequence name="n" /><graph><point name="P" /></graph>$P`);}
-  </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>  </script>
   </body>
 </html>

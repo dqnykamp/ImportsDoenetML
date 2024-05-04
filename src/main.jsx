@@ -1,9 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import {DoenetML} from '@doenet/doenetml';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { DoenetML } from "@doenet/doenetml";
 import "./DoenetML.css";
+import "@doenet/doenetml/style.css";
 
 let doenetML = `Hi Duane <graph><regularPolygon center="($s, 0)"/></graph><mathinput name='f'/>$f<spreadsheet />
   <video youtube='ZZ5LpwO-An4' name='v'/><callaction target='v' actionName='playVideo' />
@@ -14,6 +15,6 @@ let doenetML = `Hi Duane <graph><regularPolygon center="($s, 0)"/></graph><mathi
   <ref />
   `;
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <DoenetML doenetML={doenetML} />
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <DoenetML doenetML={doenetML} />
+);
